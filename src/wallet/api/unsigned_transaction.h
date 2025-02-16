@@ -35,7 +35,7 @@
 #include <vector>
 
 
-namespace Monero {
+namespace Bonero {
 
 class WalletImpl;
 class UnsignedTransactionImpl : public UnsignedTransaction

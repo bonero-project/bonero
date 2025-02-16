@@ -1,6 +1,6 @@
-# Monero Blockchain Stats
+# Bonero Blockchain Stats
 
-Monero Blockchain Stats utlity exports daily statistics for the monero blockchain from creation through current state.
+Bonero Blockchain Stats utlity exports daily statistics for the monero blockchain from creation through current state.
 
 ## Usage:
 

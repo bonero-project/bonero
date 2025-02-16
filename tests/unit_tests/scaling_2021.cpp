@@ -27,7 +27,7 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // References:
-// - https://github.com/ArticMine/Monero-Documents/blob/master/MoneroScaling2021.pdf
+// - https://github.com/ArticMine/Bonero-Documents/blob/master/MoneroScaling2021.pdf
 // - https://github.com/monero-project/research-lab/issues/70
 
 #include "gtest/gtest.h"

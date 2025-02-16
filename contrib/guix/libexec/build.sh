@@ -270,7 +270,7 @@ DEPENDS_CACHE="$(make -C contrib/depends --no-print-directory ${BASE_CACHE+BASE_
 
 # Stop here if we're only building depends packages. This is useful when
 # debugging reproducibility issues in depends packages. Skips ahead to the next
-# target, so we don't spend time building Monero binaries.
+# target, so we don't spend time building Bonero binaries.
 if [[ -n "$DEPENDS_ONLY" ]]; then
     exit 0
 fi
@@ -333,7 +333,7 @@ mkdir -p "$DISTSRC"
     # Extract the source tarball
     tar --strip-components=1 -xf "${GIT_ARCHIVE}"
 
-    # Setup the directory where our Monero build for HOST will be
+    # Setup the directory where our Bonero build for HOST will be
     # installed. This directory will also later serve as the input for our
     # binary tarballs.
     INSTALLPATH="${DISTSRC}/installed/${DISTNAME}"

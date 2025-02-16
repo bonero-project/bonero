@@ -261,7 +261,7 @@ DNSResolver::DNSResolver() : m_data(new DNSResolverData())
 
   add_anchors(m_data->m_ub_context);
 
-  if (!DNS_PUBLIC)
+  /*if (!DNS_PUBLIC)
   {
     // if no DNS_PUBLIC specified, we try a lookup to what we know
     // should be a valid DNSSEC record, and switch to known good
@@ -280,7 +280,7 @@ DNSResolver::DNSResolver() : m_data(new DNSResolverData())
       ub_ctx_set_option(m_data->m_ub_context, string_copy("do-udp:"), string_copy("no"));
       ub_ctx_set_option(m_data->m_ub_context, string_copy("do-tcp:"), string_copy("yes"));
     }
-  }
+  }*/
 }
 
 DNSResolver::~DNSResolver()

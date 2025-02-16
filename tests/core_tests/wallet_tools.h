@@ -63,7 +63,7 @@ public:
 class WalletApiAccessorTest
 {
 public:
-  static void allow_mismatched_daemon_version(Monero::WalletImpl * wallet, bool allow_mismatch) { wallet->m_wallet->allow_mismatched_daemon_version(allow_mismatch); }
+  static void allow_mismatched_daemon_version(Bonero::WalletImpl * wallet, bool allow_mismatch) { wallet->m_wallet->allow_mismatched_daemon_version(allow_mismatch); }
 };
 
 class wallet_tools

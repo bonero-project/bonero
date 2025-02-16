@@ -47,7 +47,7 @@ namespace epee {
     unsigned int g_test_dbg_lock_sleep = 0;
 }
 
-namespace Monero {
+namespace Bonero {
 
 WalletManagerImpl::WalletManagerImpl()
 {

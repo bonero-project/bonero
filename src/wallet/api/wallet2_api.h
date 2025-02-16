@@ -42,7 +42,7 @@
 #include <vector>
 
 //  Public interface for libwallet library
-namespace Monero {
+namespace Bonero {
 
 enum NetworkType : uint8_t {
     MAINNET = 0,

@@ -1,6 +1,6 @@
-# Bootstrappable Monero Builds
+# Bootstrappable Bonero Builds
 
-This directory contains the files necessary to perform bootstrappable Monero 
+This directory contains the files necessary to perform bootstrappable Bonero 
 builds.
 
 [Bootstrappability][b17e] furthers our binary security guarantees by allowing us
@@ -34,7 +34,7 @@ and examples](#common-guix-build-invocation-patterns-and-examples) section below
 before starting a build. For a full list of customization options, see the
 [recognized environment variables][env-vars-list] section.*
 
-To build Monero reproducibly with all default options, invoke the
+To build Bonero reproducibly with all default options, invoke the
 following from the top of a clean repository:
 
 ```sh
@@ -173,7 +173,7 @@ details.
 
   _(defaults to "x86\_64-linux-gnu aarch64-linux-gnu arm-linux-gnueabihf
   riscv64-linux-gnu i686-linux-gnu x86\_64-w64-mingw32 x86\_64-unknown-freebsd
-  x86\_64-apple-darwin arm64-apple-darwin aarch64-linux-android")_
+  x86\_64-apple-darwin aarch64-apple-darwin aarch64-linux-android")_
 
 * _**SOURCES_PATH**_
 

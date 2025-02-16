@@ -2,7 +2,7 @@
 
 ## Background
 
-Monero makes use of a set of helper classes from a small library named
+Bonero makes use of a set of helper classes from a small library named
 [epee](https://github.com/monero-project/monero/tree/master/contrib/epee). Part
 of this library implements a networking protocol called
 [Levin](https://github.com/monero-project/monero/blob/master/contrib/epee/include/net/levin_base.h),
@@ -159,7 +159,7 @@ that most will be familiar with):
 ```json
 {
   "short_quote": "Give me liberty or give me death",
-  "long_quote": "Monero is more than just a technology. It's also what the technology stands for.",
+  "long_quote": "Bonero is more than just a technology. It's also what the technology stands for.",
   "signed_32bit_int": 20140418,
   "array_of_bools": [true, false, true, true],
   "nested_section": {
@@ -185,7 +185,7 @@ This object would translate into the following bytes when serialized into epee p
 6c 6f 6e 67 5f 71 75 6f 74 65                   // Section key ("long_quote")
 0a                                              // Type code (STRING)
 41 01                                           // Varint length of string (80). Note it's 2 bytes
-4d 6f 6e 65 72 6f 20 69 73 20 6d 6f 72 65 20 74 // STRING value ("Monero is more t")
+4d 6f 6e 65 72 6f 20 69 73 20 6d 6f 72 65 20 74 // STRING value ("Bonero is more t")
 68 61 6e 20 6a 75 73 74 20 61 20 74 65 63 68 6e // STRING value cont. ("han just a techn")
 6f 6c 6f 67 79 2e 20 49 74 27 73 20 61 6c 73 6f // STRING value cont. ("ology. It's also")
 20 77 68 61 74 20 74 68 65 20 74 65 63 68 6e 6f // STRING value cont. (" what the techno")
@@ -215,7 +215,7 @@ c7 71 ac b5 af 98 32 9a                         // UINT64 value (111111111111111
 
 ```
 
-## Monero specifics
+## Bonero specifics
 
 ### Entry values
 
@@ -228,7 +228,7 @@ These are stored as strings, `SERIALIZE_TYPE_STRING`.
 These can be arrays of standard integer types, strings or
 `SERIALIZE_TYPE_OBJECT`'s for structs.
 
-#### Links to some Monero struct definitions
+#### Links to some Bonero struct definitions
 
 - [Core RPC
   definitions](https://github.com/monero-project/monero/blob/master/src/rpc/core_rpc_server_commands_defs.h)

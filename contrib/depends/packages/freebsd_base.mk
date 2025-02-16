@@ -14,7 +14,7 @@ endef
 # statically link our own version of OpenSSL.
 
 define $(package)_stage_cmds
-  mkdir $($(package)_staging_prefix_dir) &&\
+  mkdir $($(package)_staging_dir)/$(host_prefix)/native &&\
   rm -rf usr/include/openssl &&\
-  mv lib usr $($(package)_staging_prefix_dir)
+  mv lib usr $($(package)_staging_dir)/$(host_prefix)/native
 endef

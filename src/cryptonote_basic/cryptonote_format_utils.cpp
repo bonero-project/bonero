@@ -1096,7 +1096,7 @@ namespace cryptonote
   {
     switch (decimal_point)
     {
-      case 12:
+      case 11:
       case 9:
       case 6:
       case 3:
@@ -1119,8 +1119,8 @@ namespace cryptonote
       decimal_point = default_decimal_point;
     switch (decimal_point)
     {
-      case 12:
-        return "monero";
+      case 11:
+        return "bonero";
       case 9:
         return "millinero";
       case 6:

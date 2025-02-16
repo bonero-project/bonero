@@ -3,7 +3,7 @@ export LC_ALL=C
 set -e -o pipefail
 
 # Source the common prelude, which:
-#   1. Checks if we're at the top directory of the Monero repository
+#   1. Checks if we're at the top directory of the Bonero repository
 #   2. Defines a few common functions and variables
 #
 # shellcheck source=libexec/prelude.bash
@@ -79,16 +79,12 @@ mkdir -p "$VERSION_BASE"
 ################
 
 # Default to building for all supported HOSTs (overridable by environment)
-export HOSTS="${HOSTS:-x86_64-linux-gnu
-                       aarch64-linux-gnu
-                       arm-linux-gnueabihf
-                       riscv64-linux-gnu
-                       i686-linux-gnu
-                       x86_64-w64-mingw32
-                       x86_64-unknown-freebsd
-                       x86_64-apple-darwin
-                       arm64-apple-darwin
-                       aarch64-linux-android}"
+#export HOSTS="${HOSTS:-x86_64-linux-gnu
+#                       aarch64-linux-gnu
+#                       x86_64-w64-mingw32
+#                       x86_64-unknown-freebsd
+#                       x86_64-apple-darwin}"
+export HOSTS="x86_64-linux-gnu"
 
 # Usage: distsrc_for_host HOST
 #
@@ -316,7 +312,7 @@ output directory.
 EOF
 }
 
-# Deterministically build Monero
+# Deterministically build Bonero
 # shellcheck disable=SC2153
 for host in $HOSTS; do
 
@@ -414,7 +410,7 @@ EOF
         #
         #   --keep-failed     keep build tree of failed builds
         #
-        #     When builds of the Guix environment itself (not Monero)
+        #     When builds of the Guix environment itself (not Bonero)
         #     fail, it is useful for the build tree to be kept for debugging
         #     purposes.
         #

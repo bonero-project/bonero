@@ -13,7 +13,7 @@ enum MoneroNetworkType {
 }
 
 /**
- * Structure representing Monero transaction source entry, UTXO
+ * Structure representing Bonero transaction source entry, UTXO
  * @embed
  */
 message MoneroTransactionSourceEntry {
@@ -44,7 +44,7 @@ message MoneroTransactionSourceEntry {
 }
 
 /**
- * Structure representing Monero transaction destination entry
+ * Structure representing Bonero transaction destination entry
  * @embed
  */
 message MoneroTransactionDestinationEntry {
@@ -54,7 +54,7 @@ message MoneroTransactionDestinationEntry {
     optional bytes original = 4;
     optional bool is_integrated = 5;
     /**
-     * Structure representing Monero public address
+     * Structure representing Bonero public address
      */
     message MoneroAccountPublicAddress {
         optional bytes spend_public_key = 1;
@@ -93,7 +93,7 @@ message MoneroGetAddress {
 }
 
 /**
- * Response: Contains Monero watch-only credentials derived from device private seed
+ * Response: Contains Bonero watch-only credentials derived from device private seed
  * @end
  */
 message MoneroAddress {
@@ -112,7 +112,7 @@ message MoneroGetWatchKey {
 }
 
 /**
- * Response: Contains Monero watch-only credentials derived from device private seed
+ * Response: Contains Bonero watch-only credentials derived from device private seed
  * @end
  */
 message MoneroWatchKey {
@@ -131,7 +131,7 @@ message MoneroTransactionInitRequest {
     optional MoneroNetworkType network_type = 3 [default=MAINNET]; // Network type
     optional MoneroTransactionData tsx_data = 4;
     /**
-     * Structure representing Monero initial transaction information
+     * Structure representing Bonero initial transaction information
      */
     message MoneroTransactionData {
         optional uint32 version = 1;
@@ -262,7 +262,7 @@ message MoneroTransactionAllOutSetAck {
     optional bytes full_message_hash = 5;
 
     /*
-     * Structure represents initial fields of the Monero RCT signature
+     * Structure represents initial fields of the Bonero RCT signature
      */
     message MoneroRingCtSig {
         optional uint64 txn_fee = 1;
@@ -327,7 +327,7 @@ message MoneroKeyImageExportInitRequest {
     optional MoneroNetworkType network_type = 4 [default=MAINNET]; // network type
     repeated MoneroSubAddressIndicesList subs = 5;
     /**
-     * Structure representing Monero list of sub-addresses
+     * Structure representing Bonero list of sub-addresses
      */
     message MoneroSubAddressIndicesList {
         required uint32 account = 1;
@@ -349,7 +349,7 @@ message MoneroKeyImageExportInitAck {
 message MoneroKeyImageSyncStepRequest {
     repeated MoneroTransferDetails tdis = 1;
     /**
-     * Structure representing Monero UTXO for key image sync
+     * Structure representing Bonero UTXO for key image sync
      */
     message MoneroTransferDetails {
         required bytes out_key = 1;
@@ -369,7 +369,7 @@ message MoneroKeyImageSyncStepRequest {
 message MoneroKeyImageSyncStepAck {
     repeated MoneroExportedKeyImage kis = 1;
     /**
-     * Structure representing Monero encrypted exported key image
+     * Structure representing Bonero encrypted exported key image
      */
     message MoneroExportedKeyImage {
         optional bytes iv = 1;
@@ -475,7 +475,7 @@ message MoneroLiveRefreshFinalAck {
 }
 
 /**
- * Request: Universal Monero protocol implementation diagnosis request.
+ * Request: Universal Bonero protocol implementation diagnosis request.
  * @start
  * @next DebugMoneroDiagAck
  */
@@ -489,7 +489,7 @@ message DebugMoneroDiagRequest {
 }
 
 /**
- * Response: Response to Monero diagnosis protocol.
+ * Response: Response to Bonero diagnosis protocol.
  * @end
  */
 message DebugMoneroDiagAck {

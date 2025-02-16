@@ -26,7 +26,7 @@
 # STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 # THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-if(MINGW)
+if(MSVC OR MINGW)
   set(daemonizer_sources
     windows_service.cpp
     windows_daemonizer.inl
@@ -41,7 +41,7 @@ endif()
 set(daemonizer_headers
 )
 
-if(MINGW)
+if(MSVC OR MINGW)
   set(daemonizer_private_headers
     daemonizer.h
     windows_service.h

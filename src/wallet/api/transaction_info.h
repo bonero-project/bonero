@@ -32,7 +32,7 @@
 #include <string>
 #include <ctime>
 
-namespace Monero {
+namespace Bonero {
 
 class TransactionHistoryImpl;
 

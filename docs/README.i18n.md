@@ -1,9 +1,9 @@
-Monero daemon internationalization
+Bonero daemon internationalization
 ==================================
 
-The Monero command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Monero Localization Workgroup on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/) or come chat on `#monero-translations` (Libera/IRC, riot/matrix, MatterMost)
+The Bonero command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Bonero Localization Workgroup on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/) or come chat on `#monero-translations` (Libera/IRC, riot/matrix, MatterMost)
 
-In order to use the same translation workflow as the [Monero Core GUI](https://github.com/monero-project/monero-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
+In order to use the same translation workflow as the [Bonero Core GUI](https://github.com/monero-project/monero-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
 
 ### Tools for translators
 

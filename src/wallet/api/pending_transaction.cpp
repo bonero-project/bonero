@@ -44,7 +44,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace Bonero {
 
 PendingTransaction::~PendingTransaction() {}
 

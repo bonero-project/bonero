@@ -92,7 +92,7 @@ using namespace cryptonote;
     } \
   } while (0)
 
-namespace Monero {
+namespace Bonero {
 
 namespace {
     // copy-pasted from simplewallet

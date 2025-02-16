@@ -99,7 +99,7 @@ chain for " target " development."))
                                        (base-libc glibc-2.27)
                                        (base-gcc linux-base-gcc))
   "Convenience wrapper around MAKE-CROSS-TOOLCHAIN with default values
-desirable for building Monero release binaries."
+desirable for building Bonero release binaries."
   (make-cross-toolchain target
                         base-gcc-for-libc
                         base-kernel-headers
@@ -271,6 +271,8 @@ chain for " target " development."))
         ;; Build tools
         gnu-make
         libtool
+        autoconf-2.71 ; defaults to 2.69, which does not recognize the aarch64-apple-darwin target
+        automake
         pkg-config
         cmake-minimal
 

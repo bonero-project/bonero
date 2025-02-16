@@ -2314,13 +2314,13 @@ bool wallet_api_tests::generate(std::vector<test_event_entry>& events)
   init();
   test_setup(events);
   const std::string wallet_path = (m_wallet_dir / "wallet").string();
-  const auto api_net_type = m_network_type == TESTNET ? Monero::TESTNET : Monero::MAINNET;
+  const auto api_net_type = m_network_type == TESTNET ? Bonero::TESTNET : Bonero::MAINNET;
 
-  Monero::WalletManager *wmgr = Monero::WalletManagerFactory::getWalletManager();
-  std::unique_ptr<Monero::Wallet> w{wmgr->createWalletFromDevice(wallet_path, "", api_net_type, m_trezor_path, 1, "", 1, this)};
+  Bonero::WalletManager *wmgr = Bonero::WalletManagerFactory::getWalletManager();
+  std::unique_ptr<Bonero::Wallet> w{wmgr->createWalletFromDevice(wallet_path, "", api_net_type, m_trezor_path, 1, "", 1, this)};
   CHECK_AND_ASSERT_THROW_MES(w->init(daemon()->rpc_addr(), 0), "Wallet init fail");
 
-  auto walletImpl = dynamic_cast<Monero::WalletImpl *>(w.get());
+  auto walletImpl = dynamic_cast<Bonero::WalletImpl *>(w.get());
   CHECK_AND_ASSERT_THROW_MES(walletImpl, "Dynamic wallet cast failed");
   WalletApiAccessorTest::allow_mismatched_daemon_version(walletImpl, true);
   walletImpl->setTrustedDaemon(true);
@@ -2333,19 +2333,19 @@ bool wallet_api_tests::generate(std::vector<test_event_entry>& events)
 
   uint64_t balance = w->balance(0);
   MDEBUG("Balance: " << balance);
-  CHECK_AND_ASSERT_THROW_MES(w->status() == Monero::PendingTransaction::Status_Ok, "Status nok, " << w->errorString());
+  CHECK_AND_ASSERT_THROW_MES(w->status() == Bonero::PendingTransaction::Status_Ok, "Status nok, " << w->errorString());
 
   const uint64_t tx_amount = MK_TCOINS(0.5);
   auto addr = get_address(m_eve_account);
   auto recepient_address = cryptonote::get_account_address_as_str(m_network_type, false, addr);
-  Monero::PendingTransaction * transaction = w->createTransaction(recepient_address,
+  Bonero::PendingTransaction * transaction = w->createTransaction(recepient_address,
                                                                   "",
                                                                   tx_amount,
                                                                   num_mixin(),
-                                                                  Monero::PendingTransaction::Priority_Medium,
+                                                                  Bonero::PendingTransaction::Priority_Medium,
                                                                   0,
                                                                   std::set<uint32_t>{});
-  CHECK_AND_ASSERT_THROW_MES(transaction->status() == Monero::PendingTransaction::Status_Ok, "Status nok: " << transaction->status() << ", msg: " << transaction->errorString());
+  CHECK_AND_ASSERT_THROW_MES(transaction->status() == Bonero::PendingTransaction::Status_Ok, "Status nok: " << transaction->status() << ", msg: " << transaction->errorString());
   w->refresh();
 
   CHECK_AND_ASSERT_THROW_MES(w->balance(0) == balance, "Err balance");
@@ -2359,12 +2359,12 @@ bool wallet_api_tests::generate(std::vector<test_event_entry>& events)
   return true;
 }
 
-Monero::optional<std::string> wallet_api_tests::onDevicePinRequest() {
-  return Monero::optional<std::string>(m_trezor_pin);
+Bonero::optional<std::string> wallet_api_tests::onDevicePinRequest() {
+  return Bonero::optional<std::string>(m_trezor_pin);
 }
 
-Monero::optional<std::string> wallet_api_tests::onDevicePassphraseRequest(bool &on_device) {
+Bonero::optional<std::string> wallet_api_tests::onDevicePassphraseRequest(bool &on_device) {
   on_device = false;
-  return Monero::optional<std::string>(m_trezor_passphrase);
+  return Bonero::optional<std::string>(m_trezor_passphrase);
 }
 

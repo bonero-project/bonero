@@ -41,7 +41,7 @@
 
 class WalletApiAccessorTest;
 
-namespace Monero {
+namespace Bonero {
 class TransactionHistoryImpl;
 class PendingTransactionImpl;
 class UnsignedTransactionImpl;

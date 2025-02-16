@@ -46,7 +46,6 @@ define $(package)_set_vars
 endef
 
 define $(package)_preprocess_cmds
-  cp -f $(BASEDIR)/config.guess $(BASEDIR)/config.sub . && \
   cp $($(package)_patch_dir)/fallback.c ncurses
 endef
 

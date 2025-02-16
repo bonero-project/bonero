@@ -118,7 +118,7 @@ bool ver_rct_non_semantics_simple_cached
     const std::uint8_t rct_type_to_cache
 )
 {
-    // Hello future Monero dev! If you got this assert, read the following carefully:
+    // Hello future Bonero dev! If you got this assert, read the following carefully:
     //
     // For this version of RCT, the way we guaranteed that verification caches do not generate false
     // positives (and thus possibly enabling double spends) is we take a hash of two things. One,

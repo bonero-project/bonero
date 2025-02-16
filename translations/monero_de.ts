@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
-    <name>Monero::AddressBookImpl</name>
+    <name>Bonero::AddressBookImpl</name>
     <message>
         <location filename="../src/wallet/api/address_book.cpp" line="53"/>
         <source>Invalid destination address</source>
@@ -15,7 +15,7 @@
     </message>
 </context>
 <context>
-    <name>Monero::PendingTransactionImpl</name>
+    <name>Bonero::PendingTransactionImpl</name>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="91"/>
         <source>Attempting to save transaction to file, but specified file(s) exist. Exiting to not risk overwriting. File:</source>
@@ -68,7 +68,7 @@
     </message>
 </context>
 <context>
-    <name>Monero::UnsignedTransactionImpl</name>
+    <name>Bonero::UnsignedTransactionImpl</name>
     <message>
         <location filename="../src/wallet/api/unsigned_transaction.cpp" line="75"/>
         <source>This is a watch only wallet</source>
@@ -122,7 +122,7 @@
     </message>
 </context>
 <context>
-    <name>Monero::WalletImpl</name>
+    <name>Bonero::WalletImpl</name>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1513"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1602"/>
@@ -1442,37 +1442,37 @@
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2282"/>
-        <source>Welcome to Monero, the private cryptocurrency.</source>
-        <translation>Willkommen bei Monero, der privaten Kryptowährung. </translation>
+        <source>Welcome to Bonero, the private cryptocurrency.</source>
+        <translation>Willkommen bei Bonero, der privaten Kryptowährung. </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2284"/>
-        <source>Monero, like Bitcoin, is a cryptocurrency. That is, it is digital money.</source>
-        <translation>Monero ist, wie Bitcoin, eine Kryptowährung. Also: digitales Geld.</translation>
+        <source>Bonero, like Bitcoin, is a cryptocurrency. That is, it is digital money.</source>
+        <translation>Bonero ist, wie Bitcoin, eine Kryptowährung. Also: digitales Geld.</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2288"/>
-        <source>Monero protects your privacy on the blockchain, and while Monero strives to improve all the time,</source>
-        <translation>Monero schützt deine Privatsphäre auf der Blockchain, und während Monero bestrebt ist, sich andauernd zu verbessern,</translation>
+        <source>Bonero protects your privacy on the blockchain, and while Bonero strives to improve all the time,</source>
+        <translation>Bonero schützt deine Privatsphäre auf der Blockchain, und während Bonero bestrebt ist, sich andauernd zu verbessern,</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2289"/>
-        <source>no privacy technology can be 100% perfect, Monero included.</source>
-        <translation>kann keine Privatsphärentechnologie hundertprozentig perfekt sein - Monero mit eingeschlossen.</translation>
+        <source>no privacy technology can be 100% perfect, Bonero included.</source>
+        <translation>kann keine Privatsphärentechnologie hundertprozentig perfekt sein - Bonero mit eingeschlossen.</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2290"/>
-        <source>Monero cannot protect you from malware, and it may not be as effective as we hope against powerful adversaries.</source>
-        <translation>Monero kann dich nicht vor bösartiger Software schützen, und es könnte nicht so effektiv gegen machtvolle Gegner sein, wie wir hoffen.</translation>
+        <source>Bonero cannot protect you from malware, and it may not be as effective as we hope against powerful adversaries.</source>
+        <translation>Bonero kann dich nicht vor bösartiger Software schützen, und es könnte nicht so effektiv gegen machtvolle Gegner sein, wie wir hoffen.</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2291"/>
-        <source>Flaws in Monero may be discovered in the future, and attacks may be developed to peek under some</source>
+        <source>Flaws in Bonero may be discovered in the future, and attacks may be developed to peek under some</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2292"/>
-        <source>of the layers of privacy Monero provides. Be safe and practice defense in depth.</source>
+        <source>of the layers of privacy Bonero provides. Be safe and practice defense in depth.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1930,8 +1930,8 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3565"/>
-        <source>Prints basic info about Monero for first time users</source>
-        <translation>Drucke grundlegende Informationen über Monero für Erstnutzer</translation>
+        <source>Prints basic info about Bonero for first time users</source>
+        <translation>Drucke grundlegende Informationen über Bonero für Erstnutzer</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3569"/>
@@ -2008,7 +2008,7 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3694"/>
         <source>monero, millinero, micronero, nanonero, piconero</source>
-        <translation>Monero, Millinero, Micronero, Nanonero, Piconero</translation>
+        <translation>Bonero, Millinero, Micronero, Nanonero, Piconero</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3695"/>
@@ -2648,9 +2648,9 @@ deine Wallet erneut zu synchronisieren (deine Wallet-Schlüssel sind in KEINEM F
  auto-low-priority &lt;1|0&gt;
    Whether to automatically use the low priority fee level when it&apos;s safe to do so.
  segregate-pre-fork-outputs &lt;1|0&gt;
-   Set this if you intend to spend outputs on both Monero AND a key reusing fork.
+   Set this if you intend to spend outputs on both Bonero AND a key reusing fork.
  key-reuse-mitigation2 &lt;1|0&gt;
-   Set this if you are not sure whether you will spend on a key reusing Monero fork later.
+   Set this if you are not sure whether you will spend on a key reusing Bonero fork later.
  subaddress-lookahead &lt;major&gt;:&lt;minor&gt;
    Set the lookahead sizes for the subaddress hash table.
  segregation-height &lt;n&gt;
@@ -3294,7 +3294,7 @@ Get help about a subcommand with: help mms &lt;subcommand&gt;, or mms help &lt;s
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3444"/>
-        <source>Set or modify authorized signer info (single-word label, transport address, Monero address), or list all signers</source>
+        <source>Set or modify authorized signer info (single-word label, transport address, Bonero address), or list all signers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3548,7 +3548,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4500"/>
-        <source>You are strongly encouraged to connect to the Monero network using your own daemon</source>
+        <source>You are strongly encouraged to connect to the Bonero network using your own daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3563,7 +3563,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4521"/>
-        <source>If you are new to Monero, type &quot;welcome&quot; for a brief overview.</source>
+        <source>If you are new to Bonero, type &quot;welcome&quot; for a brief overview.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3588,8 +3588,8 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5112"/>
-        <source>Background mining enabled. Thank you for supporting the Monero network.</source>
-        <translation>Hintergrund-Mining aktiviert. Danke, dass du das Monero-Netzwerk unterstützt.</translation>
+        <source>Background mining enabled. Thank you for supporting the Bonero network.</source>
+        <translation>Hintergrund-Mining aktiviert. Danke, dass du das Bonero-Netzwerk unterstützt.</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5140"/>
@@ -3610,7 +3610,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5181"/>
         <source>Enabling this supports the network you are using, and makes you eligible for receiving new monero</source>
-        <translation>Indem du dies einschaltest, unterstützt du das von dir genutzte Netzwerk, und du bist dadurch berechtigt, neue Monero zu erhalten</translation>
+        <translation>Indem du dies einschaltest, unterstützt du das von dir genutzte Netzwerk, und du bist dadurch berechtigt, neue Bonero zu erhalten</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5186"/>
@@ -3651,7 +3651,7 @@ Eingabe &amp;llu/%llu (%s): Betrag=%s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6168"/>
-        <source>I locked your Monero wallet to protect you while you were away</source>
+        <source>I locked your Bonero wallet to protect you while you were away</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3693,7 +3693,7 @@ Eingabe &amp;llu/%llu (%s): Betrag=%s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2285"/>
-        <source>Unlike Bitcoin, your Monero transactions and balance stay private and are not visible to the world by default.</source>
+        <source>Unlike Bitcoin, your Bonero transactions and balance stay private and are not visible to the world by default.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3703,7 +3703,7 @@ Eingabe &amp;llu/%llu (%s): Betrag=%s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2294"/>
-        <source>Welcome to Monero and financial privacy. For more information see https://GetMonero.org</source>
+        <source>Welcome to Bonero and financial privacy. For more information see https://GetMonero.org</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4029,7 +4029,7 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10320"/>
-        <source>Monero Address</source>
+        <source>Bonero Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4141,12 +4141,12 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10545"/>
-        <source>Invalid Monero address</source>
+        <source>Invalid Bonero address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10552"/>
-        <source>Wallet state does not allow changing Monero addresses anymore</source>
+        <source>Wallet state does not allow changing Bonero addresses anymore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5533,7 +5533,7 @@ Use &quot;mms note&quot; to display the waiting notes</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="463"/>
-        <source> Monero Address = </source>
+        <source> Bonero Address = </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5681,7 +5681,7 @@ Use &quot;mms note&quot; to display the waiting notes</source>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10137"/>
         <source>This is the command line monero wallet. It needs to connect to a monero
 daemon to work correctly.
-WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+WARNING: Do not reuse your Bonero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

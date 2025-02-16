@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2024, Monero Research Labs
+// Copyright (c) 2016-2024, Bonero Research Labs
 //
 // Author: Shen Noether <shen.noether@gmx.com>
 //
@@ -305,7 +305,7 @@ namespace rct {
       RCTTypeCLSAG = 5,
       RCTTypeBulletproofPlus = 6,
     };
-    enum RangeProofType { RangeProofBorromean, RangeProofPaddedBulletproof };
+    enum RangeProofType { RangeProofBorromean, RangeProofBulletproof, RangeProofMultiOutputBulletproof, RangeProofPaddedBulletproof };
     struct RCTConfig {
       RangeProofType range_proof_type;
       int bp_version;
