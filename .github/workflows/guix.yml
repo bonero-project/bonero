@@ -42,12 +42,8 @@ jobs:
         toolchain:
           - target: "x86_64-linux-gnu"
           - target: "aarch64-linux-gnu"
-          - target: "arm-linux-gnueabihf"
           - target: "riscv64-linux-gnu"
-          - target: "i686-linux-gnu"
           - target: "x86_64-w64-mingw32"
-          - target: "x86_64-unknown-freebsd"
-          - target: "x86_64-apple-darwin"
           - target: "arm64-apple-darwin"
           - target: "aarch64-linux-android"
 
@@ -89,7 +85,7 @@ jobs:
         with:
           name: ${{ matrix.toolchain.target }}
           path: |
-            guix/guix-build-*/output/${{ matrix.toolchain.target }}/*
+            guix/guix-build-*/output/*
             guix/guix-build-*/logs/${{ matrix.toolchain.target }}/*
 
   bundle-logs:
