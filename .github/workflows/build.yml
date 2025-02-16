@@ -79,7 +79,7 @@ jobs:
           ${{env.CCACHE_SETTINGS}}
           make release-static-win64 -j${{env.MAKE_JOB_COUNT}}
       - name: u
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: bonero-windows-amd64
           path: ./build/
