@@ -740,7 +740,15 @@ namespace nodetool
     }
     else
     {
+      // hosted by Shigeroshi Toshiboto
       full_addrs.insert("65.87.7.160:6980");
+      // public community-operated nodes
+      full_addrs.insert("45.67.221.110:6980");
+      full_addrs.insert("86.107.101.27:6980");
+      full_addrs.insert("89.179.78.193:6980");
+      full_addrs.insert("93.115.172.57:6980");
+      full_addrs.insert("93.184.156.45:18072");
+      full_addrs.insert("185.250.243.159:18072");
       // TODO
     }
     return full_addrs;
